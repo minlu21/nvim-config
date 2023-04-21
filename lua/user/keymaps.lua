@@ -9,6 +9,9 @@ keymap("n", "<leader>b", ":bnext<CR>", opts) -- navigate buffers
 keymap("n", "<leader>sx", ":close<CR>", opts)
 keymap("n", "<leader>sv", "<C-w>v", opts)
 keymap("n", "<leader>sh", "<C-w>s", opts)
+keymap("n", "<C-s>", ":w<CR>", opts)
+keymap("n", "<C-x>", ":wq!<CR>", opts)
+keymap("n", "<C-q>", ":q!<CR>", opts)
 
 keymap(
     "n",
@@ -32,6 +35,9 @@ keymap("n", "<C-f>", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
 keymap("n", "<C-t>", ":TodoQuickFix<cr>", opts)
 
 -- Insert
+keymap("i", "<C-s>", "<esc>:w<cr>", opts)
+keymap("i", "<C-x>", "<esc>:wq!<cr>", opts)
+keymap("i", "<C-q>", "<esc>:q!<CR>", opts)
 
 -- Visual
 -- keymap("v", "<up>", ":m .+1<CR>==", opts)
