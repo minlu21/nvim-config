@@ -79,7 +79,7 @@ return packer.startup(function(use)
 			ts_update()
 		end,
 	})
-	use("p00f/nvim-ts-rainbow")
+	use("HiPhish/nvim-ts-rainbow2")
 
 	-- Autoclose Brackets
 	use("windwp/nvim-autopairs")
